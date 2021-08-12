@@ -1,0 +1,44 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/login_bg.jpg) no-repeat center ;
+  background-size: cover;
+}
+.loginAndRigBox{
+  width: 400px;
+  height:310px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.head {
+  height: 60px;
+  background: url(../images/login_title.png) no-repeat center;
+}
+.reg{
+  display: none;
+}
+.login-form{
+  padding: 0 30px;
+}
+.layui-form-item{
+  display: flex;
+}
+.layui-icon{
+  line-height: 38px;
+}
+.layui-input{
+  margin-left: 10px;
+}
+#go-reg{
+  margin-top: 10px;
+  float :right;
+}
+#go-login{
+  margin-top: 10px;
+  float :right;
+}
