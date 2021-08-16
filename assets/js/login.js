@@ -28,10 +28,10 @@ layui.form.verify({
         password: $('#reg-password').val()
       }
   
-      $.post('http://api-breakingnews-web.itheima.net/api/reguser',data,
+      $.post('http://www.liulongbin.top:3007/api/reguser',data,
       function(res){
        if(res.status!=0){
-        return layer.msg(res.message)
+        return layui.layer.msg(res.message)
        }
        layer.msg(res.message)
        $("#go-login").click();
@@ -39,9 +39,9 @@ layui.form.verify({
   })
  $('#login-form').submit(function(e){
  e.preventDefault();
- $.post('http://api-breakingnews-web.itheima.net/api/login',$(this).serialize(),function(res){
+ $.post('http://www.liulongbin.top:3007/api/login',$(this).serialize(),function(res){
    if(res.status!=0){
-  return  layer.msg(res.message)
+  return  layui.layer.msg(res.message)
    }
     localStorage.setItem('token',res.token);
     location.href='../../index.html';
